@@ -1,5 +1,5 @@
 {
-  "name": "atom-header",
+  "name": "poc-atom-header",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "module": "dist/esm/index.js",
@@ -20,5 +20,14 @@
   "devDependencies": {
     "@stencil/core": "~0.16.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamaso/stenciljs.git"
+  },
+  "author": "angela damaso",
+  "bugs": {
+    "url": "https://github.com/adamaso/stenciljs/issues"
+  },
+  "homepage": "https://github.com/adamaso/stenciljs#readme"
 }
