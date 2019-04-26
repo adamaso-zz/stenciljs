@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/mycomponent.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+  <style>
+  body {
+width: 100%;
+margin: 0;
+font-family: 'Nunito Sans', sans-serif;
+color: #263951;
+}
+
+:root {
+  --primaryColor: #2751bf;
+  --secondaryColor: #6885d3;
+}
+</style>
+
+</head>
+<body>
+
+<angela-component username="Jeanette Douglas"></angela-component>
+
+<script>
+
+var arr = [
+  {
+    name: 'Menu',
+    route: 'http://www.google.com'
+  },
+  {
+    name: 'Settings',
+    route: 'http://www.kaptest.com'
+  },
+];
+
+var cmp = document.querySelector('angela-component');
+cmp.items = arr;
+</script>
+</body>
+</html>
