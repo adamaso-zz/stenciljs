@@ -14,7 +14,7 @@ export class AtomComponent {
 
 
   render() {
-    console.log(this.items);
+    const navMenu = JSON.parse(this.items);
     return (
 
       <div class="atom-navigation">
@@ -30,7 +30,7 @@ export class AtomComponent {
 
               <ul class="submenu">
                 {
-                  this.items.map(function (item, index) {
+                  navMenu.map(function (item, index) {
                     return <li key={index}><a href={item.route}>{item.name}</a></li>
                   })
                 }
