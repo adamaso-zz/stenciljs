@@ -12,11 +12,11 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface AngelaComponent {
+  interface AtomComponent {
     'items': any;
     'username': string;
   }
-  interface AngelaComponentAttributes extends StencilHTMLAttributes {
+  interface AtomComponentAttributes extends StencilHTMLAttributes {
     'items'?: any;
     'username'?: string;
   }
@@ -53,20 +53,20 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'AngelaComponent': Components.AngelaComponent;
+    'AtomComponent': Components.AtomComponent;
     'MyComponent': Components.MyComponent;
   }
 
   interface StencilIntrinsicElements {
-    'angela-component': Components.AngelaComponentAttributes;
+    'atom-component': Components.AtomComponentAttributes;
     'my-component': Components.MyComponentAttributes;
   }
 
 
-  interface HTMLAngelaComponentElement extends Components.AngelaComponent, HTMLStencilElement {}
-  var HTMLAngelaComponentElement: {
-    prototype: HTMLAngelaComponentElement;
-    new (): HTMLAngelaComponentElement;
+  interface HTMLAtomComponentElement extends Components.AtomComponent, HTMLStencilElement {}
+  var HTMLAtomComponentElement: {
+    prototype: HTMLAtomComponentElement;
+    new (): HTMLAtomComponentElement;
   };
 
   interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
@@ -76,12 +76,12 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
-    'angela-component': HTMLAngelaComponentElement
+    'atom-component': HTMLAtomComponentElement
     'my-component': HTMLMyComponentElement
   }
 
   interface ElementTagNameMap {
-    'angela-component': HTMLAngelaComponentElement;
+    'atom-component': HTMLAtomComponentElement;
     'my-component': HTMLMyComponentElement;
   }
 

@@ -1,12 +1,12 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'angela-component',
-  styleUrl: 'angela.css',
+  tag: 'atom-component',
+  styleUrl: 'atom.css',
   shadow: true
 })
 
-export class AngelaComponent {
+export class AtomComponent {
 
   @Prop() username: string;
 
